@@ -1,7 +1,7 @@
 <?php
 /**
- * @file islandora-solr-grid.tpl.php
- * Islandora solr primary results template file for
+ * @file islandora-image-annotation-solr.tmp.php
+ * Islandora solr primary results template file for image annotation module
  *
  * Variables available:
  * - $variables: all array elements of $variables can be used as a variable. e.g. $base_url equals $variables['base_url']
@@ -14,7 +14,7 @@
  * @see template_preprocess_islandora_solr_grid()
  */
 ?>
-
+<?php dsm($variables); ?>
 <?php if (empty($results)): ?>
   <p class="no-results"><?php print t('Sorry, but your search returned no results.'); ?></p>
   <?php else: ?>
